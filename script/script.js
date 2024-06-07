@@ -12,7 +12,7 @@ var numberOfClickOnEye = 0;
 var usersList = [];
 
 
-localStorage.clear();
+// localStorage.clear();
 
 if (localStorage.length) {
     usersList = JSON.parse(localStorage.getItem("users"));
