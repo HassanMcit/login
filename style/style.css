@@ -56,3 +56,11 @@ a.text-white.text-decoration-none {
 a.text-white.text-decoration-none:hover {
     text-decoration: underline !important;
 }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler  {
+    background-color: #fdfdfd;
+}
