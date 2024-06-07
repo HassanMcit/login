@@ -1,0 +1,58 @@
+:root {
+    --bs-body-color: #FFF;
+    --bs-form-valid-border-color: #FFF;
+    --bs-box-shadow: 0 0.5rem 1rem rgb(255 255 255 / 15%);
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    background-image: url(../image/login-bg.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+.form-control:focus {
+    
+    color: var(--bs-body-color);
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFF;
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: url(../image/check-svgrepo-com.svg);
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus,
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    box-shadow: none;
+}
+
+a.text-white.text-decoration-none {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+a.text-white.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
